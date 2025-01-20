@@ -1,77 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .pt-serif-regular {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .pt-serif-bold {
+}
+
+.pt-serif-bold {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .pt-serif-regular-italic {
+}
+
+.pt-serif-regular-italic {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .pt-serif-bold-italic {
+}
+
+.pt-serif-bold-italic {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-body{
-    font-family:"PT Serif";
-    display:grid;
+}
+
+body {
+    font-family: "PT Serif";
+    display: grid;
     grid-template-rows: 30px 1fr 30px;
     grid-template-areas:
     "header"
     "main"
-    "footer" ;
+    "footer";
     background-color: #fff;
     font-size: 16px;
     height: 100vh;
 }
-header{
+
+header {
     grid-area: header;
     background-color: rgb(21, 29, 80);
     display: flex;
     color: whitesmoke;
     justify-content: space-around;
 }
-main{
+
+main {
     display: grid;
     grid-area: main;
     color: rgb(21, 29, 80);
     justify-content: center;
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: rgb(21, 29, 80);
     color: whitesmoke;
-   text-align: center;
-   font-size: .8em;
-   padding-bottom:25px; 
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 25px;
 }
-.navBar{
-    display:flex;
+
+.navBar {
+    display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     color: whitesmoke;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .navBar a {
-    color: whitesmoke; 
-    text-decoration: none; 
-    padding: 5px 10px; 
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 10px;
     font-size: 1.1em;
 }
-.card{
+
+.card {
     border: 2px solid rgb(21, 29, 80);
     border-radius: 15px;
     text-align: center;
@@ -80,10 +87,12 @@ footer{
     margin: 30px;
     height: 400px;
 }
-.form-input{
+
+.form-input {
     display: flex;
     flex-direction: column;
     padding: 10px;
     align-items: flex-start;
 }
+
 

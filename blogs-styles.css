@@ -87,3 +87,15 @@ footer{
     border: 2px solid rgb(21, 29, 80);
     border-radius: 5px;
 }
+article header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(183, 193, 211);
+    color: rgb(21, 29, 80);
+}
+article footer{
+    padding-bottom: 0px;
+    background-color: rgb(183, 193, 211);
+    color: rgb(21, 29, 80);
+}

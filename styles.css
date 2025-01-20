@@ -3,91 +3,110 @@
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
-  .pt-serif-bold {
+.pt-serif-bold {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
   
-  .pt-serif-regular-italic {
+.pt-serif-regular-italic {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: italic;
-  }
+}
   
-  .pt-serif-bold-italic {
+.pt-serif-bold-italic {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-body{
-    font-family:"PT Serif";
-    display:grid;
+}
+
+body {
+    font-family: "PT Serif";
+    display: grid;
     grid-template-rows: 30px 1fr 30px;
     grid-template-areas:
     "header"
     "main"
-    "footer" ;
+    "footer";
     background-color: #fff;
     font-size: 16px;
     height: 100vh;
 }
-header{
+
+header {
     grid-area: header;
     background-color: rgb(21, 29, 80);
     display: flex;
     color: whitesmoke;
     justify-content: space-around;
 }
-main{
+
+main {
     display: grid;
     grid-area: main;
     color: rgb(21, 29, 80);
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: rgb(21, 29, 80);
     color: whitesmoke;
-   text-align: center;
-   font-size: .8em;
-   padding-bottom:25px; 
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 25px; 
 }
-.navBar{
-    display:flex;
+
+.navBar {
+    display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     color: whitesmoke;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .navBar a {
-    color: whitesmoke; 
+    color: whitesmoke;
     text-decoration: none; 
     padding: 5px 10px; 
     font-size: 1.1em;
 }
-.card{
+
+.card {
     border: 2px solid rgb(21, 29, 80);
     border-radius: 15px;
     text-align: center;
-    width: 200px;
+    width: 100%;
     padding: 10px;
-    margin: 30px;
+    margin: 10px 0;
     height: auto;
-    
 }
-.card img{
+
+.card img {
     width: 100px;
     border: 2px solid rgb(21, 29, 80);
     border-radius: 5px;
 }
-.card a{
+
+.card a {
     text-decoration: none; 
     color: rgb(21, 29, 80);
+}
+
+@media (min-width: 651px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 200px;
+        margin: 30px;
+    }
 }
