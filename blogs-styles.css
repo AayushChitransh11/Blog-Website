@@ -1,101 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .pt-serif-regular {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .pt-serif-bold {
+}
+
+.pt-serif-bold {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .pt-serif-regular-italic {
+}
+
+.pt-serif-regular-italic {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .pt-serif-bold-italic {
+}
+
+.pt-serif-bold-italic {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-body{
-    font-family:"PT Serif";
-    display:grid;
-    grid-template-rows: 30px 1fr 30px;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer" ;
+}
+body {
+    font-family: "PT Serif", serif;
+    display: grid;
+    grid-template-rows: 60px 1fr 40px; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
     background-color: #fff;
     font-size: 16px;
     height: 100vh;
+    margin: 0;
 }
-header{
+
+header {
     grid-area: header;
     background-color: rgb(21, 29, 80);
     display: flex;
+    align-items: center;
     color: whitesmoke;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-main{
-    display: grid;
+
+main {
     grid-area: main;
-    color: rgb(21, 29, 80);
+    display: grid;
+    grid-template-columns: 1fr; 
     justify-content: center;
+    padding: 20px;
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: rgb(21, 29, 80);
     color: whitesmoke;
-   text-align: center;
-   font-size: .8em;
-   padding-bottom:25px; 
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0;
 }
-.navBar{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
     color: whitesmoke;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
 }
+
 .navBar a {
     color: whitesmoke; 
     text-decoration: none; 
-    padding: 5px 10px; 
+    padding: 5px 15px; 
     font-size: 1.1em;
 }
-.card{
+
+.card {
     border: 2px solid rgb(21, 29, 80);
     border-radius: 15px;
     text-align: center;
-    width: 600px;
-    padding: 10px;
-    margin: 30px;
-    height: auto;
-    
-    
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%; /* Default for narrow screens */
 }
-.card img{
+
+.card img {
     width: 100px;
+    height: auto;
     border: 2px solid rgb(21, 29, 80);
     border-radius: 5px;
 }
-article header{
+
+article header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(183, 193, 211);
     color: rgb(21, 29, 80);
+    padding: 10px;
+    border-radius: 10px;
 }
-article footer{
-    padding-bottom: 0px;
+
+article footer {
     background-color: rgb(183, 193, 211);
     color: rgb(21, 29, 80);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px; 
+        justify-content:center ;
+        align-items: center;
+    }
+
+    .card {
+        width: 600px; 
+    }
 }
