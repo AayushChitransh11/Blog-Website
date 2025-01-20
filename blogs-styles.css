@@ -46,8 +46,7 @@ main{
     display: grid;
     grid-area: main;
     color: rgb(21, 29, 80);
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
 }
 footer{
     grid-area: footer;
@@ -76,18 +75,15 @@ footer{
     border: 2px solid rgb(21, 29, 80);
     border-radius: 15px;
     text-align: center;
-    width: 200px;
+    width: 600px;
     padding: 10px;
     margin: 30px;
     height: auto;
+    
     
 }
 .card img{
     width: 100px;
     border: 2px solid rgb(21, 29, 80);
     border-radius: 5px;
-}
-.card a{
-    text-decoration: none; 
-    color: rgb(21, 29, 80);
 }
